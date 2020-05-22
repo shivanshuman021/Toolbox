@@ -7,7 +7,13 @@ using std::vector;
 using std::max;
 
 int compute_min_refills(int dist, int tank, vector<int> & stops) {
-    // write your code here
+    int count=0,k=1;
+    for (int i=0;i<n;++i)
+    {
+        if (stops[i]>tank*k){
+            ++k;++count;
+        }
+    }
     return -1;
 }
 
